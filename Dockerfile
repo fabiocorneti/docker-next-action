@@ -11,7 +11,7 @@ ENV HIDE_FUTURE 7
 ENV EXTRA_ARGS ""
 
 RUN apk update && apk add git && \
-    pip install git+https://github.com/nikdoof/NextAction@support/0.3 && \
+    pip install git+https://github.com/fabiocorneti/NextAction@0.5-snapshot && \
     rm -rf /var/cache/apk/* && \
     apk del git
 
